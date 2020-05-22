@@ -1,88 +1,94 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Brafé 2 - CSS Puro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Brafé 2 - CSS GRID</title>
 </head>
+
 <body>
-    <header>
-        <div class="header-informacoes">
-            <p>aberto de 08h às 18h - seg à sáb - rua bartolomeu mitre - botafogo</p>
-        </div>
-        <a href="index.html" class="header-logo">
-            <img src="img/brafe.png" alt="">
-        </a>
-        <nav class="header-menu">
-            <ul>
-                <li><a href="#">cafés</a></li>
-                <li><a href="#">cappuccinos</a></li>
-                <li><a href="#">canecas</a></li>
-                <li><a href="#">souvenir</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <nav class="filtro">
-            <h2>Preço</h2>
-            <ul>
-                <li>$</li>
-                <li>$$</li>
-                <li>$$$</li>
-            </ul>
-            <h2>Sabor</h2>
-            <ul class="sabor">
-                <li><span class="sabor-3">Amarelo</span></li>
-                <li><span class="sabor-4">Laranja</span></li>
-                <li><span class="sabor-5">Marrom</span></li>
-            </ul>
-            <h2>Tempo</h2>
-            <ul>
-                <li>15min +</li>
-                <li>20min +</li>
-                <li>35min +</li>
-            </ul>
-        </nav>
+	<header>
+		<div class="header-informacoes">
+			<p>aberto de 08h às 18h - seg à sáb - rua bartolomeu mitre - botafogo</p>
+		</div>
+		<a href="index.html" class="header-logo">
+			<img src="img/brafe.png" alt="">
+		</a>
+		<nav class="header-menu">
+			<ul>
+				<li><a href="#">cafés</a></li>
+				<li><a href="#">cappuccinos</a></li>
+				<li><a href="#">canecas</a></li>
+				<li><a href="#">souvenir</a></li>
+			</ul>
+		</nav>
+	</header>
 
-        <section class="produtos">
-            <h1>Capuccinos</h1>
-            <ul>
-                <li>
-                    <img src="img/cafe-1.jpg" alt="Café 1">
-                    <span>R$ 3,25</span>
-                    <h2>Vanilla Dices</h2>
-                </li>
-                <li>
-                    <img src="img/cafe-2.jpg" alt="Café 1">
-                    <span>R$ 3,25</span>
-                    <h2>Blueberry Latte</h2>
-                </li>
-                <li>
-                    <img src="img/cafe-3.jpg" alt="Café 1">
-                    <span>R$ 3,25</span>
-                    <h2>Ghostbusters Brown</h2>
-                </li>
-                <li>
-                    <img src="img/cafe-4.jpg" alt="Café 1">
-                    <span>R$ 3,25</span>
-                    <h2>Strawberry Fields</h2>
-                </li>
-                <li>
-                    <img src="img/cafe-5.jpg" alt="Café 1">
-                    <span>R$ 3,25</span>
-                    <h2>Scone Comb</h2>
-                </li>
-                <li>
-                    <img src="img/cafe-6.jpg" alt="Café 1">
-                    <span>R$ 3,25</span>
-                    <h2>Wild Bill</h2>
-                </li>
-            </ul>
-        </section>
-    </div>
+	<div class="container">
+		<nav class="filtro grid-4">
+			<h2>Preço</h2>
+			<ul>
+				<li>$</li>
+				<li>$$</li>
+				<li>$$$</li>
+			</ul>
+			<h2>Sabor</h2>
+			<ul class="sabor">
+				<li><span class="sabor-3">Amarelo</span></li>
+				<li><span class="sabor-4">Laranja</span></li>
+				<li><span class="sabor-5">Marrom</span></li>
+			</ul>
+			<h2>Tempo</h2>
+			<ul>
+				<li>15min +</li>
+				<li>20min +</li>
+				<li>35min +</li>
+			</ul>
+		</nav>
 
-    <footer class="footer">
-        <p>Este é um projeto da Origamid reproduzido pelo aluno Leonardo Vitor Dantas Nascimento.</p>
-    </footer>
+		<section class="produtos grid-8">
+			<h1>Capuccinos</h1>
+			<ul class="row-mobile">
+				<li class="grid-mobile-6">
+					<img src="img/cafe-1.jpg" alt="Café Vanilla Dices">
+					<span>R$ 3,25</span>
+					<h2>Vanilla Dices</h2>
+				</li>
+				<li class="grid-mobile-6">
+					<img src="img/cafe-2.jpg" alt="Café Blueberry Latte">
+					<span>R$ 3,25</span>
+					<h2>Blueberry Latte</h2>
+				</li>
+				<li class="grid-mobile-6">
+					<img src="img/cafe-3.jpg" alt="Café Ghostbusters Brown">
+					<span>R$ 3,25</span>
+					<h2>Ghostbusters Brown</h2>
+				</li>
+				<li class="grid-mobile-6">
+					<img src="img/cafe-4.jpg" alt="Café Strawberry Fields">
+					<span>R$ 3,25</span>
+					<h2>Strawberry Fields</h2>
+				</li>
+				<li class="grid-mobile-6">
+					<img src="img/cafe-5.jpg" alt="Café Scone Comb">
+					<span>R$ 3,25</span>
+					<h2>Scone Comb</h2>
+				</li>
+				<li class="grid-mobile-6">
+					<img src="img/cafe-6.jpg" alt="Café Wild Bill">
+					<span>R$ 3,25</span>
+					<h2>Wild Bill</h2>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<p>Este é um projeto da Origamid reproduzido pelo aluno Leonardo Vitor Dantas Nascimento.</p>
+	</footer>
 </body>
+
 </html>
