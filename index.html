@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/flex.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Brafé 2 - CSS GRID</title>
 </head>
@@ -27,63 +27,65 @@
 		</nav>
 	</header>
 
-	<div class="flex">
-		<nav class="filtro flex-item-4">
-			<h2>Preço</h2>
-			<ul>
-				<li>$</li>
-				<li>$$</li>
-				<li>$$$</li>
-			</ul>
-			<h2>Sabor</h2>
-			<ul class="sabor">
-				<li><span class="sabor-3">Amarelo</span></li>
-				<li><span class="sabor-4">Laranja</span></li>
-				<li><span class="sabor-5">Marrom</span></li>
-			</ul>
-			<h2>Tempo</h2>
-			<ul>
-				<li>15min +</li>
-				<li>20min +</li>
-				<li>35min +</li>
-			</ul>
-		</nav>
+	<div class="container">
+		<div class="row">
+			<nav class="filtro col-md-4">
+				<h2>Preço</h2>
+				<ul>
+					<li>$</li>
+					<li>$$</li>
+					<li>$$$</li>
+				</ul>
+				<h2>Sabor</h2>
+				<ul class="sabor">
+					<li><span class="sabor-3">Amarelo</span></li>
+					<li><span class="sabor-4">Laranja</span></li>
+					<li><span class="sabor-5">Marrom</span></li>
+				</ul>
+				<h2>Tempo</h2>
+				<ul>
+					<li>15min +</li>
+					<li>20min +</li>
+					<li>35min +</li>
+				</ul>
+			</nav>
 
-		<section class="produtos flex-item-8">
-			<h1>Capuccinos</h1>
-			<ul class="flex-row">
-				<li class="flex-item-6">
-					<img src="img/cafe-1.jpg" alt="Café Vanilla Dices">
-					<span>R$ 3,25</span>
-					<h2>Vanilla Dices</h2>
-				</li>
-				<li class="flex-item-6">
-					<img src="img/cafe-2.jpg" alt="Café Blueberry Latte">
-					<span>R$ 3,25</span>
-					<h2>Blueberry Latte</h2>
-				</li>
-				<li class="flex-item-6">
-					<img src="img/cafe-3.jpg" alt="Café Ghostbusters Bro class="flex-item-6"wn">
-					<span>R$ 3,25</span>
-					<h2>Ghostbusters Brown</h2>
-				</li>
-				<li class="flex-item-6">
-					<img src="img/cafe-4.jpg" alt="Café Strawberry Fields">
-					<span>R$ 3,25</span>
-					<h2>Strawberry Fields</h2>
-				</li>
-				<li class="flex-item-6">
-					<img src="img/cafe-5.jpg" alt="Café Scone Comb">
-					<span>R$ 3,25</span>
-					<h2>Scone Comb</h2>
-				</li>
-				<li class="flex-item-6">
-					<img src="img/cafe-6.jpg" alt="Café Wild Bill">
-					<span>R$ 3,25</span>
-					<h2>Wild Bill</h2>
-				</li>
-			</ul>
-		</section>
+			<section class="produtos col-md-8">
+				<h1>Capuccinos</h1>
+				<ul class="row">
+					<li class="col-6">
+						<img src="img/cafe-1.jpg" alt="Café Vanilla Dices">
+						<span>R$ 3,25</span>
+						<h2>Vanilla Dices</h2>
+					</li>
+					<li class="col-6">
+						<img src="img/cafe-2.jpg" alt="Café Blueberry Latte">
+						<span>R$ 3,25</span>
+						<h2>Blueberry Latte</h2>
+					</li>
+					<li class="col-6">
+						<img src="img/cafe-3.jpg" alt="Café Ghostbusters Brown">
+						<span>R$ 3,25</span>
+						<h2>Ghostbusters Brown</h2>
+					</li>
+					<li class="col-6">
+						<img src="img/cafe-4.jpg" alt="Café Strawberry Fields">
+						<span>R$ 3,25</span>
+						<h2>Strawberry Fields</h2>
+					</li>
+					<li class="col-6">
+						<img src="img/cafe-5.jpg" alt="Café Scone Comb">
+						<span>R$ 3,25</span>
+						<h2>Scone Comb</h2>
+					</li>
+					<li class="col-6">
+						<img src="img/cafe-6.jpg" alt="Café Wild Bill">
+						<span>R$ 3,25</span>
+						<h2>Wild Bill</h2>
+					</li>
+				</ul>
+			</section>	
+		</div>
 	</div>
 
 	<footer class="footer">
